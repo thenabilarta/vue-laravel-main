@@ -23,7 +23,7 @@
 <?php $__env->stopPush(); ?>
 <?php $__env->startPush('scripts'); ?>
 
-    <script src="<?php echo Module::asset('panel:js/panel.js'); ?>"></script>
+    <script src="<?php echo Module::asset('panel:js/panel.js'); ?>" defer></script>
 
 <?php $__env->stopPush(); ?>
 

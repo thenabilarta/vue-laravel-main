@@ -25,7 +25,7 @@
 @endpush
 @push('scripts')
 
-    <script src="{!! Module::asset('panel:js/panel.js') !!}"></script>
+    <script src="{!! Module::asset('panel:js/panel.js') !!}" defer></script>
 
 @endpush
 

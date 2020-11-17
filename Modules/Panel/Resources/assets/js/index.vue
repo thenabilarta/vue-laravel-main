@@ -85,9 +85,19 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   mounted() {
-    console.log("Hello from vue");
+    axios
+      .get("http://localhost:8000/panel/data", [], {
+        headers: {
+          Authorization:
+            "Bearer " +
+            "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjBlZDdiNzYzMTQwYTFmM2FmYmU5OWRmZmE5NzA3NDMyMDYzZTQ3MjRlYjgxNWUzMGNkOGZjOWJkZmNlYWVjMGM4NDU2ZTgxNzZkMDQyYjg5In0",
+        },
+      })
+      .then((res) => console.log(res));
   },
 };
 </script>
